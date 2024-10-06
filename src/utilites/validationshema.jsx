@@ -1,7 +1,6 @@
 import * as Yup from "yup";
 
-const phoneNumberRegex =
-  /^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/;
+const phoneNumberRegex = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s./0-9]*$/;
 
 
 const nameRegex = /^[A-ZА-Я][a-zа-я]+ [A-ZА-Я][a-zа-я]+$/;  

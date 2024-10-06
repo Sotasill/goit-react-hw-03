@@ -6,6 +6,7 @@ import ValidationShema from "/src/utilites/validationshema";
 
 
 
+
 const initialValues = {
   name: "",
   number: "",
@@ -38,6 +39,7 @@ function ContactForm({ onAdd }) {
             name="name"
             id={nameFieldId}
             className={css.input}
+            placeholder="Enter your name"
           />
           <ErrorMessage
             name="name"
@@ -54,6 +56,7 @@ function ContactForm({ onAdd }) {
             name="number"
             id={numberFieldId}
             className={css.input}
+            placeholder="Enter your phone number"
           />
           <ErrorMessage
             name="number"

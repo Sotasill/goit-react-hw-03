@@ -1,16 +1,20 @@
+import css from './Contact.module.css'
+
+
+
 function Contact({ id, name, number, onDelete }) {
   return (
-    <li>
+    <li className={css.listitem} >
       <div>
         <p>{name}</p>
         <p>{number}</p>
       </div>
 
-      <button
+      <button className={css.delBtn}
         onClick={() => {
           onDelete(id);
         }}
-      ></button>
+      >Delete</button>
     </li>
   );
 }
